@@ -1,0 +1,64 @@
+name: internup
+description: A new Flutter project.
+publish_to: "none"
+version: 0.6.0
+
+environment:
+    sdk: ">=3.0.6 <4.0.0"
+
+dependencies:
+    device_preview: ^1.1.0
+    flutter:
+        sdk: flutter
+    get: ^4.6.5 #great toolkit for state management, navigation and dependency injection
+    google_nav_bar: ^5.0.6
+    icons_launcher: ^2.1.3
+    intl: ^0.18.0
+    package_info_plus: ^4.1.0
+    unicons: 2.1.0 #2.1.1 doesnt include whatsapp normal icon
+    url_launcher: ^6.1.12
+
+dev_dependencies:
+    flutter_lints: ^2.0.0
+    flutter_test:
+        sdk: flutter
+
+flutter:
+    uses-material-design: true
+    fonts:
+        - family: Flama
+          fonts:
+              - asset: fonts/Flama-Basic.ttf
+        - family: FlamaLight
+          fonts:
+              - asset: fonts/Flama-Light.ttf
+        - family: FlamaBold
+          fonts:
+              - asset: fonts/Flama-Bold.ttf
+        - family: FlamaMedium
+          fonts:
+              - asset: fonts/Flama-Medium.ttf
+        - family: FlamaBook
+          fonts:
+              - asset: fonts/Flama-Book.ttf
+        - family: FlamaSemiBold
+          fonts:
+              - asset: fonts/Flama-Semibold.ttf
+
+icons_launcher:
+    image_path: "assets/logo.png"
+    platforms:
+        android:
+            enable: true
+            adaptive_background_color: "#ffffff"
+            adaptive_foreground_image: "assets/logo.png"
+        ios:
+            enable: true
+        macos:
+            enable: true
+        windows:
+            enable: true
+        linux:
+            enable: true
+        web:
+            enable: true
